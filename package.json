@@ -1,7 +1,7 @@
 {
   "name": "@swan/theme",
-  "version": "0.1.0",
-  "description": "A JupyterLab extension.",
+  "version": "0.0.2",
+  "description": "A JupyterLab extension SWAN Theme.",
   "keywords": [
     "jupyter",
     "jupyterlab",

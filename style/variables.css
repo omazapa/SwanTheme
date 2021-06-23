@@ -400,18 +400,55 @@ body[data-jp-theme-name="JupyterLab SwanTheme"] .jp-Launcher-body {
   background-size: 10%;
 }
 
-#jp-top-panel {
+#jp-top-panel  {
   border-bottom: var(--jp-border-width) solid var(--jp-border-color0);
   background:#09263C ;
   display: flex;
   min-height: var(--jp-private-menubar-height);
   overflow: visible;
 }
-
+/* 
+#jp-top-panel *
+{
+  border-bottom: var(--jp-border-width) solid var(--jp-border-color0);
+  background:#09263C ;
+  display: flex;
+  min-height: var(--jp-private-menubar-height);
+  overflow: visible;
+}  */
 #jp-menu-panel {
   min-height: var(--jp-private-menu-panel-height);
   background: #09263C;
+  display: flex;
+  min-height: var(--jp-private-menubar-height);
+  overflow: visible;
 }
+
+#jp-menu-panel * {
+  min-height: var(--jp-private-menu-panel-height);
+  background: #09263C;
+  display: flex;
+  min-height: var(--jp-private-menubar-height);
+  overflow: visible;
+}
+
+#jp-title-panel-title >  h1
+{
+  color: white;
+}
+
+#jp-main-statusbar 
+{
+  background: #09263C;
+  color: white;
+}
+
+#jp-main-statusbar *
+{
+  background: #09263C;
+  color: white;
+}
+
 
 .lm-MenuBar {
   background: #09263C;
@@ -452,4 +489,3 @@ body[data-jp-theme-name="JupyterLab SwanTheme"] .jp-Spinner {
   background-repeat: no-repeat;
   background-size: 80%;
 } */
-

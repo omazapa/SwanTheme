@@ -13,7 +13,7 @@ const extension: JupyterFrontEndPlugin<void> = {
   requires: [IThemeManager],
   autoStart: true,
   activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
-    console.log('JupyterLab extension @swan/theme is activated!');
+    console.log('JupyterLab extension swantheme is activated!');
     const style = '@swan/theme/index.css';
     manager.register({
       name: 'JupyterLab SwanTheme',
