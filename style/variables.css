@@ -218,7 +218,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Brand/accent */
 
   --jp-brand-color0: var(--md-blue-900);
-  --jp-brand-color1: var(--md-blue-700);
+  --jp-brand-color1: #0153a1;
   --jp-brand-color2: var(--md-blue-300);
   --jp-brand-color3: var(--md-blue-100);
   --jp-brand-color4: var(--md-blue-50);
@@ -393,67 +393,44 @@ all of MD as it is not optimized for dense, information rich UIs.
 
 /* Launcher */
 
-body[data-jp-theme-name="JupyterLab SwanTheme"] .jp-Launcher-body {
+body[data-jp-theme-name='JupyterLab SwanTheme'] .jp-Launcher-body {
   background-image: url('./swan_logo.svg');
   background-position: 95% 95%;
   background-repeat: no-repeat;
   background-size: 10%;
 }
 
-#jp-top-panel  {
-  border-bottom: var(--jp-border-width) solid var(--jp-border-color0);
-  background:#09263C ;
-  display: flex;
-  min-height: var(--jp-private-menubar-height);
-  overflow: visible;
-}
-/* 
-#jp-top-panel *
-{
-  border-bottom: var(--jp-border-width) solid var(--jp-border-color0);
-  background:#09263C ;
-  display: flex;
-  min-height: var(--jp-private-menubar-height);
-  overflow: visible;
-}  */
+#jp-top-panel,
 #jp-menu-panel {
-  min-height: var(--jp-private-menu-panel-height);
-  background: #09263C;
-  display: flex;
-  min-height: var(--jp-private-menubar-height);
-  overflow: visible;
+  --jp-layout-color0: #0153a1;
+  --jp-layout-color1: #09263c;
+  --jp-layout-color2: #09263c;
+
+  --jp-inverse-layout-color1: #dadada;
+  --jp-inverse-layout-color2: #b8b8b8;
+  --jp-inverse-layout-color3: #b8b8b8;
+
+  --jp-ui-font-color0: #eee;
+  --jp-ui-font-color1: #dadada;
+
+  --jp-border-color0: #0153a1;
+  --jp-border-color1: #0153a1;
 }
 
-#jp-menu-panel * {
-  min-height: var(--jp-private-menu-panel-height);
-  background: #09263C;
-  display: flex;
-  min-height: var(--jp-private-menubar-height);
-  overflow: visible;
+.lm-Menu,
+.jp-SideBar,
+#modal-command-palette,
+#jp-main-statusbar {
+  --jp-layout-color0: #eee;
+  --jp-layout-color1: #eee;
+  --jp-layout-color2: #dadada;
 }
 
-#jp-title-panel-title >  h1
-{
-  color: white;
+#jp-bottom-panel {
+  border-top: var(--jp-border-width) solid var(--jp-border-color0);
 }
-
-#jp-main-statusbar 
-{
-  background: #09263C;
-  color: white;
-}
-
-#jp-main-statusbar *
-{
-  background: #09263C;
-  color: white;
-}
-
-
-.lm-MenuBar {
-  background: #09263C;
-  color: white;
-  font-size: var(--jp-ui-font-size1);
+body[data-jp-theme-name='JupyterLab SwanTheme'] {
+  background: #dadada;
 }
 
 #jp-MainLogo {
@@ -461,6 +438,7 @@ body[data-jp-theme-name="JupyterLab SwanTheme"] .jp-Launcher-body {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center center;
+  margin: 0 8px;
 }
 
 #jp-MainLogo > svg {
@@ -469,7 +447,7 @@ body[data-jp-theme-name="JupyterLab SwanTheme"] .jp-Launcher-body {
 }
 
 /* Spinner */
-body[data-jp-theme-name="JupyterLab SwanTheme"] .jp-Spinner {
+body[data-jp-theme-name='JupyterLab SwanTheme'] .jp-Spinner {
   background-image: url('./swan_logo.svg');
   background-position: 95% 95%;
   background-repeat: no-repeat;
